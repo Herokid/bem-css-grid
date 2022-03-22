@@ -28,8 +28,13 @@ module.exports = (env, argv) => {
     return {
         mode: 'development',
 
+        entry: {
+            main: ['./src/index.js', './src/scss/styles.scss'],
+            grid: ['./src/scss/grid/styles.scss'],
+        },
+
         output: {
-            filename: isProduction ? 'bundle.[contenthash].js' : 'bundle.js',  
+            filename: '[name].js',  
             clean: true,
         },
 
@@ -38,7 +43,6 @@ module.exports = (env, argv) => {
                 vue: 'vue/dist/vue.esm-bundler.js',
             },
         },
-
     
         devServer: {
             static: {
@@ -62,7 +66,7 @@ module.exports = (env, argv) => {
                     template: './src/index.html'
                 }
             ),
-            new MiniCssExtractPlugin({filename: isProduction ? 'bundle.[contenthash].css': 'bundle.css'})
+            new MiniCssExtractPlugin({filename: '[name].css' }),
         ],
     
         module: { rules }
