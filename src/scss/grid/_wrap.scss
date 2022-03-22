@@ -1,0 +1,23 @@
+@use 'sass:math';
+@use 'variables' as *;
+
+.g-wrap {
+    display: block;
+    width: $grid-width;
+    margin-right: auto;
+    margin-left: auto;
+
+    &:not(&--fluid) {
+        @each $breakpoint in $grid-breakpoints {
+            $key: nth($breakpoint, 1);
+            $val: nth($breakpoint, 2);
+    
+            @if $key != 'xs' {
+                @media (min-width: #{$val}) {
+                    max-width: $val;
+                }
+            }
+        }
+    }
+
+}
