@@ -11,13 +11,12 @@
         max-width: 100%;
         padding-right: math.div($grid-gutter, 2);
         padding-left: math.div($grid-gutter, 2);
-        min-width: math.div(100%, $grid-columns);
+        // min-width: math.div(100%, $grid-columns);
 
         @each $gutter in $grid-gutter-modifiers {
             $modifier: nth($gutter, 1);
             $multiplier: nth($gutter, 2);
 
-            .g-wrap--#{$modifier} &,
             .g-row--#{$modifier} & {
                 padding-right: math.div($grid-gutter, 2) * $multiplier;
                 padding-left: math.div($grid-gutter, 2) * $multiplier;
@@ -41,7 +40,6 @@
         $modifier: nth($gutter, 1);
         $multiplier: nth($gutter, 2);
 
-        .g-wrap--#{$modifier} &,
         .g-row--#{$modifier} & {
             padding-right: math.div($grid-gutter, 2) * $multiplier;
             padding-left: math.div($grid-gutter, 2) * $multiplier;
@@ -70,7 +68,6 @@
                     $modifier: nth($gutter, 1);
                     $multiplier: nth($gutter, 2);
 
-                    .g-wrap--#{$modifier} &,
                     .g-row--#{$modifier} & {
                         padding-right: math.div($grid-gutter, 2) * $multiplier;
                         padding-left: math.div($grid-gutter, 2) * $multiplier;

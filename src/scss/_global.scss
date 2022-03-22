@@ -24,7 +24,37 @@ body {
     font-family: var(--font-main);
     font-size: 1.6rem;
     font-smooth: always;
+    font-family: 'Courier New', Courier, monospace;
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+ h1 {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 1em 0;
+}
+
+h2 {
+    text-align: left;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: .5em 0;
+}
+
+h3 {
+    text-align: left;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 1em 0;
+}
+
+ul {
+    margin-bottom: 1em
+}
+
+hr {
+    margin: 3rem 0
 }

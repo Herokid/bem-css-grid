@@ -1,10 +1,9 @@
-'use strict';
+import { createApp } from 'vue'
+import { reactive } from "vue"
 
-class App {
-
-    constructor() {
-        const _ = this;
+createApp({
+    setup() {
+        const title = 'BEM CSS GRID';
+        return { title }
     }
-};
-
-export default App;
+}).mount('#app')

@@ -24,7 +24,6 @@
         $modifier: nth($gutter, 1);
         $multiplier: nth($gutter, 2);
 
-        .g-wrap--#{$modifier} &,
         &--#{$modifier} {
             margin-right: - math.div($grid-gutter, 2) *  $multiplier;;
             margin-left: - math.div($grid-gutter, 2) *  $multiplier;;

@@ -1,4 +1,5 @@
-const path = require('path')
+const webpack = require('webpack');
+const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
@@ -8,7 +9,7 @@ const rulesJS = {
     options: {
         presets: ["@babel/preset-env"]
     }
-}
+};
 
 const rulesCSS = {
     test: /\.s[ac]ss$/i,
@@ -16,8 +17,8 @@ const rulesCSS = {
         MiniCssExtractPlugin.loader, 
         "css-loader",
         "sass-loader"
-    ],
-}
+    ]
+};
 
 const rules = [rulesJS, rulesCSS];
 
@@ -25,12 +26,19 @@ module.exports = (env, argv) => {
     const isProduction = argv.mode === 'production';
 
     return {
+        mode: 'development',
+
         output: {
             filename: isProduction ? 'bundle.[contenthash].js' : 'bundle.js',  
             clean: true,
         },
 
-        mode: 'development',
+        resolve: {
+            alias: {
+                vue: 'vue/dist/vue.esm-bundler.js',
+            },
+        },
+
     
         devServer: {
             static: {
@@ -44,6 +52,10 @@ module.exports = (env, argv) => {
         },
 
         plugins: [
+            new webpack.DefinePlugin({
+                __VUE_OPTIONS_API__: false,
+                __VUE_PROD_DEVTOOLS__: false,
+            }),
             new HtmlWebpackPlugin(
                 { 
                     templateParameters: { page: 'home' },

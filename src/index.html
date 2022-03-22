@@ -9,11 +9,70 @@
             .col-content {
                 background-color: #c3d891;
                 padding: 20px;
-                margin-bottom: 20px;
+                margin-bottom: 10px;
             }
         </style>
     </head>
-    <body data-page="<%= page %>">
-        
+    <body>
+        <div id="app">
+            <h1>{{ title }}</h1>
+            <div class="g-wrap">
+                <div v-for="gutter in ['xs', 'sm', '', 'md', 'lg']">
+                    <div class="g-row" :class="gutter === '' ? '' : 'g-row--' + gutter">
+                        <div class="g-col">
+                            <h2 v-if="gutter === ''">Grid with default gutter</h2>
+                            <h2 v-else>Grid with .g-row--{{gutter}} gutter modifier</h2>
+                        </div>
+                    </div>
+                    <div class="g-row" :class="gutter === '' ? '' : 'g-row--' + gutter">
+                        <div class="g-col">
+                            <h3>Dinamic width columns (.g-col)</h3>
+                        </div>
+                    </div>
+                    <div class="g-row" :class="gutter === '' ? '' : 'g-row--' + gutter">
+                        <div v-for='index in 5' class="g-col">
+                            <div class="col-content"></div>
+                        </div>
+                    </div>
+                    <div class="g-row" :class="gutter === '' ? '' : 'g-row--' + gutter">
+                        <div class="g-col">
+                            <h2>Dinamic width columns 2/2</h2>
+                        </div>
+                    </div>
+                    <div class="g-row" :class="gutter === '' ? '' : 'g-row--' + gutter">
+                        <div v-for='index in 18' class="g-col">
+                            <div class="col-content"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="g-row" :class="gutter === '' ? '' : 'g-row--' + gutter">
+                        <div class="g-col">
+                            <h2>Width specific size by screen size</h2>
+                            <ul>
+                                <li>
+                                    XS: default (12 columns)
+                                </li>
+                                <li>
+                                    SM: 6 columns
+                                </li>
+                                <li>
+                                    MD: 3 columns
+                                </li>
+                                <li>
+                                    MD: 2 columns
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="g-row" :class="gutter === '' ? '' : 'g-row--' + gutter">
+                        <div v-for='index in 12' class="g-col--sm-6 g-col--md-3 g-col--lg-2">
+                            <div class="col-content"></div>
+                        </div>
+                    </div>
+
+                    <hr>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
