@@ -1,15 +1,20 @@
 {
-  "name": "bem-css-grid",
+  "name": "@herokid/bem-css-grid",
   "version": "1.0.0",
-  "private": true,
   "scripts": {
     "dev": "webpack serve --config bundle/webpack.config.js --mode=development",
     "watch": "webpack --config bundle/webpack.config.js --watch",
     "build": "webpack --config bundle/webpack.config.js --mode=production"
   },
+  "repository": "https://github.com/Herokid/bem-css-grid/tree/1.0.0",
   "dependencies": {
     "vue": "^3.2.31"
   },
+  "files": [
+    "package.json",
+    "src/scss/grid",
+    "dist/grid.css"
+  ],
   "devDependencies": {
     "@babel/core": "^7.17.8",
     "@babel/preset-env": "^7.16.11",
