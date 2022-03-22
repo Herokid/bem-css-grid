@@ -16,7 +16,7 @@ $grid-columns: 12 !default;
 ```scss
 $grid-gutter: 14px !default;
 ```
-### Grid breakpoints for .g-col--[BREAKPOINT]-[COL_NUMBER] *modifier*
+### Grid breakpoints for .g-col--[BREAKPOINT]-[COLUMNS] *modifier*
 ```scss
 $grid-breakpoints: ( "xs" : 0px, "sm" : 768px, "md" : 992px, "lg" : 1200px) !default;
 ```
