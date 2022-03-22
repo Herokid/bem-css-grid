@@ -38,8 +38,9 @@ module.exports = (env, argv) => {
                 staticOptions: {},
                 publicPath: "/",
                 serveIndex: true,
-                watch: true,
-            }
+                watch: true
+            },
+            watchFiles: ['src/**/*.html', 'src/**/*.scss', 'src/**/*.js'],
         },
 
         plugins: [
