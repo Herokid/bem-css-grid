@@ -1,5 +1,5 @@
 {
-  "name": "@herokid/bem-css-grid",
+  "name": "bem-css-grid",
   "version": "1.0.0",
   "scripts": {
     "dev": "webpack serve --config bundle/webpack.config.js --mode=development",
@@ -10,11 +10,6 @@
   "dependencies": {
     "vue": "^3.2.31"
   },
-  "files": [
-    "package.json",
-    "src/scss/grid",
-    "dist/grid.css"
-  ],
   "devDependencies": {
     "@babel/core": "^7.17.8",
     "@babel/preset-env": "^7.16.11",
