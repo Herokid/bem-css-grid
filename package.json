@@ -1,7 +1,17 @@
 {
   "name": "@hkst/bem-css-grid",
   "version": "1.0.0",
-  "description": "Flexbox css grid system with BEM notation.",
+  "description": "Flexbox grid system with BEM notation.",
+  "keywords": [
+    "hkst",
+    "unvoid",
+    "bem",
+    "css",
+    "grid",
+    "flexbox",
+    "sass",
+    "scss"
+  ],
   "licence": "MIT",
   "author": "unvoid",
   "files": [
