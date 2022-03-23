@@ -13,11 +13,11 @@ The main grid row container
 Auto width column
 
 ### .g-col--[BP]-[1-12]
-Column with [1-12] columns space since [BP] breakpoint width.
-See [breakpints variable](#Grid-breakpoints-for-.g-col--[BREAKPOINT]-[COLUMNS]-modifier)
+Column with [1-12] columns space since [BP] breakpoint width.<br>
+See [breakpoints variable](#grid-breakpoints)
 
 ## Basic markup structure with auto width columns
-If you don't use columns modifier classnames the columns has auto width.
+If you don't use columns modifier classnames the columns has auto width.<br>
 In this example the grid system have 12 columns and each .g-col element in this markup use 3 columns space(3*4=12)
 ```html
 <div class="g-wrap">
@@ -81,11 +81,11 @@ $grid-columns: 12 !default;
 ```scss
 $grid-gutter: 14px !default;
 ```
-### Grid breakpoints for .g-col--[BREAKPOINT]-[COLUMNS] *modifier*
+### Grid breakpoints
 ```scss
 $grid-breakpoints: ( "xs" : 0px, "sm" : 768px, "md" : 992px, "lg" : 1200px) !default;
 ```
-### Grid gutter *modifiers* for .g-row *block*
+### Grid gutter modifiers
 ```scss
 $grid-gutter-modifiers: ( "xs" : 0.25, "sm" : 0.75, "md" : 1.5, "lg" : 1.75) !default;
 ```
