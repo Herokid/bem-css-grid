@@ -9,6 +9,11 @@ The main grid wrapper
 ### .g-row
 The main grid row container
 
+
+### .g-row--[MODIFIER]
+Grid row with gutter modifier.<br>
+See [breakpoints variable](#grid-gutter-modifiers)
+
 ### .g-col
 Auto width column
 
@@ -89,6 +94,8 @@ $grid-breakpoints: ( "xs" : 0px, "sm" : 768px, "md" : 992px, "lg" : 1200px) !def
 ```scss
 $grid-gutter-modifiers: ( "xs" : 0.25, "sm" : 0.75, "md" : 1.5, "lg" : 1.75) !default;
 ```
+If you use .g-row--xs, the gutter is ```$grid-gutter * 0.25;```.
+If you use .g-row--lg, the gutter is ```$grid-gutter * 1.75;```.
 
 ## Custom variables values
 ```scss
