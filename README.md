@@ -3,7 +3,7 @@ Flexbox grid system.
 
 ## How to use
 
-### Instalation
+### Installation
 ```console
 npm i @hkst/css-grid
 ```
@@ -55,7 +55,7 @@ In this example the grid system have 12 columns and each *.g-col* element in thi
 ```
 
 ## Basic markup structure with columns width by breakpoint
-*(Very similar html markup than bootstrap grid)*
+*(Very similar html markup concept than bootstrap grid)*
 ```html
 <div class="g-wrap">
     <div class="g-row">
