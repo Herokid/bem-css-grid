@@ -1,6 +1,21 @@
 # BEM CSS GRID
 Flexbox grid system with BEM notation.
 
+## Classnames
+
+### .g-wrap
+The main grid wrapper
+
+### .g-row
+The main grid row container
+
+### .g-col
+Auto width column
+
+### .g-col--[BP]-[1-12]
+Column with [1-12] columns space since [BP] breakpoint width.
+See [breakpints variable](#Grid-breakpoints-for-.g-col--[BREAKPOINT]-[COLUMNS]-modifier)
+
 ## Basic markup structure with auto width columns
 If you don't use columns modifier classnames the columns has auto width.
 In this example the grid system have 12 columns and each .g-col element in this markup use 3 columns space(3*4=12)
@@ -48,13 +63,15 @@ In this example the grid system have 12 columns and each .g-col element in this 
     </div>
 </div>
 ```
-
-## Customization
-You can custom this sass variables:
+## How to use
+```scss
+@import '~bem-css-grid-test/src/scss/grid/styles';
+```
+## Variables
 
 ### Grid width
 ```scss
-$grid-width: 100% !default;
+$grid-width:  100% !default;
 ```
 ### Grid columns
 ```scss
@@ -71,4 +88,10 @@ $grid-breakpoints: ( "xs" : 0px, "sm" : 768px, "md" : 992px, "lg" : 1200px) !def
 ### Grid gutter *modifiers* for .g-row *block*
 ```scss
 $grid-gutter-modifiers: ( "xs" : 0.25, "sm" : 0.75, "md" : 1.5, "lg" : 1.75) !default;
+```
+
+## Custom variables values
+```scss
+$grid-gutter: 30px;
+@import '~bem-css-grid-test/src/scss/grid/styles';
 ```
