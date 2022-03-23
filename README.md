@@ -4,7 +4,7 @@ Flexbox grid system with BEM notation.
 ## Basic markup structure with auto width columns
 If you don't use columns modifier classnames the columns has auto width.
 In this example the grid system have 12 columns and each .g-col element in this markup use 3 columns space(3*4=12)
-```scss
+```html
 <div class="g-wrap">
     <div class="g-row">
         <div class="g-col">
@@ -25,7 +25,7 @@ In this example the grid system have 12 columns and each .g-col element in this 
 
 ## Basic markup structure with columns width by breakpoint
 *(Very similar html markup than bootstrap grid)*
-```scss
+```html
 <div class="g-wrap">
     <div class="g-row">
         <div class="g-col--xs-6">
