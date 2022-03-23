@@ -94,7 +94,7 @@ $grid-breakpoints: ( "xs" : 0px, "sm" : 768px, "md" : 992px, "lg" : 1200px) !def
 ```scss
 $grid-gutter-modifiers: ( "xs" : 0.25, "sm" : 0.75, "md" : 1.5, "lg" : 1.75) !default;
 ```
-If you use .g-row--xs, the gutter is ```$grid-gutter * 0.25;```.
+If you use .g-row--xs, the gutter is ```$grid-gutter * 0.25;```.<br>
 If you use .g-row--lg, the gutter is ```$grid-gutter * 1.75;```.
 
 ## Custom variables values
