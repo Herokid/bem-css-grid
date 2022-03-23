@@ -1,6 +1,6 @@
 {
-  "name": "@hkst/bem-css-grid-test",
-  "version": "0.0.6",
+  "name": "@hkst/bem-css-grid",
+  "version": "1.0.0",
   "description": "Flexbox css grid system with BEM notation.",
   "licence": "MIT",
   "author": "unvoid",
