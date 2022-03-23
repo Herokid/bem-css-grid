@@ -1,7 +1,7 @@
 {
-  "name": "@hkst/bem-css-grid",
+  "name": "@hkst/css-grid",
   "version": "1.0.0",
-  "description": "Flexbox grid system with BEM notation.",
+  "description": "Flexbox grid system.",
   "keywords": [
     "hkst",
     "unvoid",
@@ -24,10 +24,10 @@
     "build": "webpack --config bundle/webpack.config.js --mode=production",
     "prepare": "npm run build"
   },
-  "homepage": "https://github.com/Herokid/bem-css-grid/tree/1.0.0",
+  "homepage": "https://github.com/Herokid/hkst-css-grid",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Herokid/bem-css-grid/tree/1.0.0"
+    "url": "https://github.com/Herokid/hkst-css-grid"
   },
   "devDependencies": {
     "@babel/core": "^7.17.8",

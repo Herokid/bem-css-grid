@@ -1,5 +1,5 @@
-# BEM CSS GRID
-Flexbox grid system with BEM notation.
+# HKST CSS GRID
+Flexbox grid system.
 
 ## Classnames
 
@@ -8,7 +8,6 @@ The main grid wrapper
 
 ### .g-row
 The main grid row container
-
 
 ### .g-row--[MODIFIER]
 Grid row with gutter modifier.<br>
@@ -22,8 +21,8 @@ Column with [1-12] columns space since [BP] breakpoint width.<br>
 See [breakpoints variable](#grid-breakpoints)
 
 ## Basic markup structure with auto width columns
-If you don't use columns modifier classnames the columns has auto width.<br>
-In this example the grid system have 12 columns and each .g-col element in this markup use 3 columns space(3*4=12)
+If you don't use columns *modifier classnames* the columns has auto width.<br>
+In this example the grid system have 12 columns and each *.g-col* element in this markup use 3 columns space(3*4=12)
 ```html
 <div class="g-wrap">
     <div class="g-row">
