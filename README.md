@@ -1,6 +1,18 @@
 # HKST CSS GRID
 Flexbox grid system.
 
+## How to use
+
+### Instalation
+```console
+npm i @hkst/css-grid
+```
+
+### How to use in your SASS files
+```scss
+@import '~bem-css-grid-test/src/scss/grid/styles';
+```
+
 ## Classnames
 
 ### .g-wrap
@@ -67,10 +79,7 @@ In this example the grid system have 12 columns and each *.g-col* element in thi
     </div>
 </div>
 ```
-## How to use
-```scss
-@import '~bem-css-grid-test/src/scss/grid/styles';
-```
+
 ## Variables
 
 ### Grid width
